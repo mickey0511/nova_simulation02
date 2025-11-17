@@ -147,7 +147,6 @@ def iterative_sampling_loop(
         # format to accepted format
         top_entries = {"molecules": top_pool["name"].tolist()}
 
-        # write to file
         with open(output_path, "w") as f:
             json.dump(top_entries, f, ensure_ascii=False, indent=2)
 
